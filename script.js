@@ -91,8 +91,9 @@ let selectedWords = [];
 let wordLISTBYscore = []
 for(let i = 0; i < woorden.length; i++){
   for(let j = 0; j < (woorden[i].score)**2; j++){
-    if(selectedKapitels.includes(woorden[i].kapitel) || kapitels === "")
-  wordLISTBYscore.push(woorden[i]);
+    if(selectedKapitels.includes(woorden[i].kapitel) || kapitels === ""){
+      wordLISTBYscore.push(woorden[i]);
+    }
 }
 }
 for(let i = 0; i < questionAmount; i++){
